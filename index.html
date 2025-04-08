@@ -25,73 +25,109 @@
 
 
     <!-- Main Header-->
-    <header class="main-header header-style-one">
-    
-        <!--Header-Upper-->
-        <div class="header-upper">
-            <div class="auto-container">
-                <div class="">
-    
-                    <div class="pull-left logo-box">
-                        <div class="logo">
-                            <a href="index.html">
-                                <!-- <img src="images/logo.png" alt="" title=""> -->
-                                <h3 class="logo-text" style="color: #fff;">B-Care</h3>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="nav-outer">
-    
-                        <!-- Main Menu -->
-                        <nav class="main-menu navbar-expand-md ">
-                            <div class="navbar-header">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-    
-                            <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                                <ul class="navigation clearfix">
-                                    <li class="dropdown"><a href="#">Home</a>
-                                        
-                                    </li>
-                                    <li class="dropdown"><a href="#why">Why Us</a>
-                                    </li>
-                                    <li><a href="#progress">Progress</a></li>
-                                    <li class="dropdown"><a href="#testimonial">Tesimonial</a>
-                                        
-                                    </li>
-                                    </li>
-                                    <li><a href="#clients">Clients</a></li>
-                                    
-                                </ul>
-                            </div>
-                            
-                        </nav>
-                        <div class="outer-box">
-                            <!-- Btn Box -->
-                            <div class="btn-box">
-                                <a href="https://crm.bytecareltd.com/login" class="btn-style-one theme-btn"><span class="txt">Sign In</span></a>
-                            </div>
-                        </div>
-    
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-        <!--End Header Upper-->
-    
-    </header>
+    <header class="header-section" id="sticky-header">
+		<nav class="navbar navbar-expand-xl d-none d-xl-flex" id="navbar">
+		  <div class="container navbar-main">
+			<a class="navbar-brand" href="index.html">
+			  <!-- <img src="./assets/images/logo/logo-1.webp" style="max-width: 80px" class="img-fluid" alt="logo" /> -->
+			  <h3 class="logo-text" style="color: #fff;">B-Care</h3>
+			</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mx-auto">
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#banner">Home
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#why">Why Us</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#progress">Progress</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#fetaure">Fetaure</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#testimonial">Testimonial </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#clients">Clients </a>
+				</li>
+			  </ul>
+			  <div class="btn-box">
+				<a href="https://crm.bytecareltd.com/login" class="btn-style-one theme-btn"><span class="txt">Sign In</span></a>
+			</div>
+			</div>
+		  </div>
+		</nav>
+	
+		<!-- mobile navbar part start -->
+		<div class="mobile-menu-area d-block d-xl-none">
+		  <div class="container">
+			<!-- mobile topbar -->
+			<div class="mobile-topbar">
+			  <div class="d-flex justify-content-between align-items-center">
+				<div class="logo">
+				  <a href="index.html">
+					<!-- <img src="./assets/images/logo/logo-1.webp" style="max-width: 70px" class="img-fluid" alt="logo" /> -->
+					<h3 class="logo-text" style="color: #fff;">B-Care</h3>
+				  </a>
+				</div>
+				<div class="bars">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- mobile menu -->
+		  <div class="mobile-menu-overlay"></div>
+		  <div class="mobile-menu-main">
+			<div class="d-flex align-items-center justify-content-between pe-2">
+			  <div class="logo">
+				<a href="./index.html">
+				  <!-- <img src="./assets/images/logo/logo-1.webp" style="width: 100px" class="img-fluid" alt="logo" /> -->
+				  <h3 class="logo-text" style="color: #fff;">B-Care</h3>
+				</a>
+			  </div>
+			  <div class="close-mobile-menu"><i class="fa fa-times"></i></div>
+			</div>
+			<div class="menu-body">
+			  <div class="menu-list">
+				<ul class="list-unstyled">
+				  <li class="sub-mobile-menu">
+					<a href="./index.html">Home </a>
+				  </li>
+				  <li class="sub-mobile-menu">
+					<a href="#why">Why Us</a>
+				  </li>
+				  <li class="sub-mobile-menu">
+					<a href="#progress">Progress</a>
+				  </li>
+				  <li class="sub-mobile-menu">
+					<a href="#fetaure">Fetaure</a>
+				  </li>
+				  <li class="sub-mobile-menu">
+					<a href="#testimonial">Testimonial</a>
+				  </li>
+				  <li class="sub-mobile-menu">
+					<a href="#clients">Clients </a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			<div class="call-us p-4">
+				<div class="btn-box">
+					<a href="https://crm.bytecareltd.com/login" class="btn-style-one theme-btn"><span class="txt">Sign In</span></a>
+				</div>
+			</div>
+		  </div>
+		</div>
+		<!-- mobile navbar part end -->
+	  </header>
     <!--End Main Header -->
 
     <!--Banner Section-->
-    <section class="banner-section">
+    <section class="banner-section" id="banner">
         <div class="patern-layer-one" style="background-image: url(images/background/pattern-1.png)"></div>
         <div class="patern-layer-two" style="background-image: url(images/background/pattern-2.png)"></div>
         <div class="patern-layer-three" style="background-image: url(images/background/pattern-3.png)"></div>
@@ -197,9 +233,11 @@
 				<!-- Image Column -->
 				<div class="image-column col-lg-6 col-md-12 col-sm-12">
 					<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image titlt" data-tilt data-tilt-max="4">
-							<img src="images/resource/progress.jpg" alt="" />
-						</div>
+						<a href="images/resource/progress.jpg" class="image-popup">
+							<div class="image titlt" data-tilt data-tilt-max="4">
+								<img src="images/resource/progress.jpg" alt="" />
+							</div>
+						</a>
 						
 						<!-- Counter Boxed -->
 						<div class="counter-boxed">
@@ -277,13 +315,17 @@
 				<div class="image-column col-lg-5 col-md-12 col-sm-12 align-self-center">
 					<div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="patern-layer-one" style="background-image: url(images/background/pattern-9.png)"></div>
+					<a href="images/resource/crm.jpg" class="image-popup">
 						<div class="image titlt" data-tilt data-tilt-max="2" style="max-width:685px;">
 							<img src="images/resource/crm.jpg" alt="" />
+							
+							
 							<!-- <div class="crm-box">
 								<h3>CRM Growth<span>210</span></h3>
 								<i class="icon flaticon-open-box"></i>
 							</div> -->
 						</div>
+					</a>
 					</div>
 				</div>
 				
@@ -309,7 +351,7 @@
 	<!-- End Management Section -->
 
     <!-- Collaborate Section -->
-    <section class="collaborate-section">
+    <section class="collaborate-section" id="fetaure">
 		<div class="auto-container">
             <!-- Sec Title -->
 						<div class="sec-title centered">
@@ -321,9 +363,11 @@
 				<!-- Image Column -->
 				<div class="image-column col-lg-6 col-md-12 col-sm-12 align-self-center">
 					<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image titlt" data-tilt data-tilt-max="4">
-							<img src="images/resource/collaborate.jpg" alt="" class="" />
-						</div>
+						<a href="images/resource/collaborate.jpg" class="image-popup">
+							<div class="image titlt" data-tilt data-tilt-max="4">
+								<img src="images/resource/collaborate.jpg" alt="" class="" />
+							</div>
+						</a>
 					</div>
 				</div>
 				
@@ -384,7 +428,7 @@
 	</section>
 	<!-- End Call To Action Section -->
 
-    <!-- Tesimonial Section -->
+    <!-- Testimonial Section -->
     <section class="testimonial-section my-5" id="testimonial">
 		<div class="pattern-layer-one" style="background-image: url(images/background/pattern-10.png)"></div>
 		<div class="auto-container">
@@ -450,7 +494,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- End Tesimonial Section -->
+	<!-- End Testimonial Section -->
      
 
     <!-- Clients Section -->
@@ -548,8 +592,10 @@
                                 <div class="footer-widget support-widget">
 									<h5>Support</h5>
 									<ul>
-										<li>113 momo Street, bd 721 <br> NY 20012</li>
-										<li><a href="mailto:micihelp@gmail.com">micihelp@gmail.com</a></li>
+										<li>Level 7, 122 Bir Uttam Shamsul Alam Sarak,
+											Kakrail Road<br>
+											Dhaka - 1217, Bangladesh </li>
+										<li><a href="mailto:info@bytecareltd.com">info@bytecareltd.com</a></li>
 									</ul>
 								</div>
 							</div>
@@ -581,5 +627,6 @@
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/knob.js"></script>
   <script src="assets/js/jquery-ui.js"></script>
+  <script src="assets/js/jquery.magnific-popup.js"></script>
   <script src="assets/js/script.js"></script>
 </body>

@@ -11,26 +11,72 @@
 	
 	
 
-	//Update Header Style and Scroll to Top
-	function headerStyle() {
-		if($('.main-header').length){
-			var windowpos = $(window).scrollTop();
-			var siteHeader = $('.main-header');
-			var scrollLink = $('.scroll-to-top');
-			if (windowpos >= 1) {
-				siteHeader.addClass('fixed-header');
-				scrollLink.fadeIn(300);
-			} else {
-				siteHeader.removeClass('fixed-header');
-				scrollLink.fadeOut(300);
-			}
+	  // fixed menu js
+	  $(window).on("scroll", function () {
+		let scroll = $(window).scrollTop();
+		if (scroll < 120) {
+		  $("#sticky-header").removeClass("sticky-menu");
+		  $("#header-fixed-height").removeClass("active-height");
+		} else {
+		  $("#sticky-header").addClass("sticky-menu");
+		  $("#header-fixed-height").addClass("active-height");
 		}
-	}
+	  });
 	
-	headerStyle();
+	 
+	
+	  // Mobile menu js start
+	  $(".mobile-topbar .bars").on("click", function () {
+		$(".mobile-menu-overlay,.mobile-menu-main").addClass("active");
+	  });
+	
+	  $(".close-mobile-menu,.mobile-menu-overlay").on("click", function () {
+		$(".mobile-menu-overlay,.mobile-menu-main").removeClass("active");
+	  });
+	
+	  $(".sub-mobile-menu ul").hide();
+	  $(".sub-mobile-menu a").on("click", function () {
+		$(".sub-mobile-menu ul").not($(this).next("ul")).slideUp(300);
+		$(".sub-mobile-menu a i")
+		  .not($(this).find("i"))
+		  .removeClass("fa-chevron-up")
+		  .addClass("fa-chevron-down");
+		$(this).next("ul").slideToggle(300);
+		$(this).find("i").toggleClass("fa-chevron-up fa-chevron-down");
+	  });
+
+	  $('.nav-link').on('click', function() {
+		$('.nav-link').removeClass('active');
+		$(this).addClass('active');
+	  });
+	  // Cache selectors
+	  let sections = $('section');
+	  let navLinks = $('.nav-link');
+  
+	  $(window).on('scroll', function () {
+		let currentPosition = $(this).scrollTop();
+  
+		sections.each(function () {
+		  let top = $(this).offset().top - 100; // Adjust offset for fixed nav
+		  let bottom = top + $(this).outerHeight();
+  
+		  if (currentPosition >= top && currentPosition <= bottom) {
+			let id = $(this).attr('id');
+			navLinks.removeClass('active');
+			$('.nav-link[href="#' + id + '"]').addClass('active');
+		  }
+		});
+	  });
 	
 	
-	
+	// Magnific popup image js
+	$(".image-popup").magnificPopup({
+		type: "image",
+		gallery: {
+		  enabled: true,
+		},
+	  });
+	  
 	//Hidden Sidebar
 	if ($('.hidden-bar').length) {
 		var hiddenBar = $('.sidebar-btn');
