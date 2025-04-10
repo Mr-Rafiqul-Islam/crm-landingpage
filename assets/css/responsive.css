@@ -1,5 +1,37 @@
-/* Mici HTML Template*/
+/* Responsive CSS
+-------------------------------------------------------------- */
+@media only screen and (max-width: 1690px){
+	.banner-section .image-column .image img{
+		width: 100%;
+	}
+	
+}
+@media (min-width: 1690px){
+	.management-section .image-column .inner-column .image-popup .image{
+		width: 685px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1690px){
+	.banner-section .content-column h1{
+		font-size: 48px;
+	}
+}
 
+@media (min-width: 991px) and (max-width: 1199.98px){
+	.banner-section .content-column {
+		padding-left:50px;
+	}
+}
+
+@media screen and (max-width: 991.98px){
+	.banner-section .content-column{
+		text-align:center;
+	}
+	.banner-section .image-column .inner-column {
+		display: flex;
+		justify-content: center;
+	  }
+}
 @media only screen and (max-width: 1140px){
 	
 	.main-header{
